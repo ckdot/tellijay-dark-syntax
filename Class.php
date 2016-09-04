@@ -1,8 +1,18 @@
 <?php
 
+namespace Namespace\Of\Class;
+
+use ExampleNamespace\ExtendedClass;
+
 class ExampleClass extends ExtendedClass implements ExampleInterface
 {
     const MY_INTEGER_CONSTANT = 12345;
+
+    /**
+     * Just a dummy property
+     * @var string
+     */
+    private $myProperty = 'hello';
 
     public function myFunction($myParameter)
     {

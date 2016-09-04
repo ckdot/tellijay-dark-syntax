@@ -102,6 +102,12 @@ atom-text-editor .search-results .marker.current-result .region,
   &.other.unit {
     color: @orange;
   }
+
+  &.other.namespace,
+  &.other.use {
+      color: @orange;
+      font-weight: bold;
+  }
 }
 
 .storage {
@@ -230,6 +236,10 @@ atom-text-editor .search-results .marker.current-result .region,
   }
   &.name.type {
     color: @light-orange;
+
+    &.namespace {
+        color: @light-blue;
+    }
   }
 
   &.other.inherited-class {
