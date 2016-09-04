@@ -1,29 +1,20 @@
 <?php
 
-class Flasche extends Horst implements Bla
+class ExampleClass extends ExtendedClass implements ExampleInterface
 {
-    public function hello($bla)
-    {
-        // bllaa
-        echo 'blabla';
-        print('hello');
+    const MY_INTEGER_CONSTANT = 12345;
 
-        $array = [
+    public function myFunction($myParameter)
+    {
+        // inline comment
+        $myInteger = 6789;
+        $myString  = 'hello';
+        $myArray   = [
             'aa', 'bb'
         ];
 
         array_values(['aa']);
 
-        return $this->horst($hello, $vlaues['price']);
-    }
-
-    /**
-     * Horsti
-     * @param [type] $hh [description]
-     * @return [type] [description]
-     */
-    public function horst($hh)
-    {
-        echo $hh;
+        return $this->mySecondFunction($param1, $param2);
     }
 }
